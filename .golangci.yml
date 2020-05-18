@@ -8,6 +8,7 @@ linters:
     - gochecknoglobals
     - gochecknoinits
     - godox
+    - goerr113
     - gomnd
     - lll
     - nakedret
