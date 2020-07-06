@@ -12,4 +12,5 @@ linters:
     - gomnd
     - lll
     - nakedret
+    - testpackage
     - wsl
