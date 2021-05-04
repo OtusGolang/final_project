@@ -25,7 +25,6 @@ linters:
     - godot
     - gofmt
     - goheader
-    - goimports
     - golint
     - gomodguard
     - goprintffuncname
