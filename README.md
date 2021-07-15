@@ -11,7 +11,7 @@
 * Наличие юнит-тестов на ключевые алгоритмы (core-логику) сервиса.
 * Наличие валидных Dockerfile и Makefile/Taskfile для сервиса.
 * Ветка master успешно проходит пайплайн в CI-CD системе 
-(на ваш вкус, Circle CI, Travis CI, Jenkins, GitLab CI и пр.).
+(на ваш вкус, GitHub Actions, Circle CI, Travis CI, Jenkins, GitLab CI и пр.).
 **Пайплайн должен в себе содержать**:
     - запуск последней версии `golangci-lint` на весь проект с
     [конфигом, представленным в данном репозитории](./.golangci.yml);
