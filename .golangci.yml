@@ -7,6 +7,7 @@ linters-settings:
     statements: 80
 
 linters:
+  disable-all: true
   enable:
     - asciicheck
     - bodyclose
@@ -14,7 +15,9 @@ linters:
     - depguard
     - dogsled
     - dupl
+    - durationcheck
     - errorlint
+    - exhaustive
     - exportloopref
     - funlen
     - gci
@@ -24,32 +27,39 @@ linters:
     - gocyclo
     - godot
     - gofmt
+    - gofumpt
     - goheader
-    - golint
+    - gomoddirectives
     - gomodguard
     - goprintffuncname
     - gosec
     - gosimple
     - govet
+    - ifshort
+    - importas
     - ineffassign
-    - interfacer
-    - maligned
+    - lll
+    - makezero
     - misspell
     - nestif
+    - nilerr
     - noctx
     - nolintlint
     - prealloc
+    - predeclared
+    - revive
     - rowserrcheck
-    - scopelint
     - sqlclosecheck
     - staticcheck
     - structcheck
     - stylecheck
+    - tagliatelle
+    - thelper
     - tparallel
     - typecheck
     - unconvert
     - unparam
     - unused
     - varcheck
+    - wastedassign
     - whitespace
- 
