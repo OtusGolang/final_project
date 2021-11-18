@@ -26,7 +26,6 @@
 - Загрузка дисков:
     - tps (transfers per second);
     - KB/s (kilobytes (read+write) per second);
-    - CPU (%user_mode, %system_mode, %idle).
 
 - Информация о дисках по каждой файловой системе:
     - использовано мегабайт, % от доступного количества;
