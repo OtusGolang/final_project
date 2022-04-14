@@ -11,14 +11,14 @@
 масштабирующий/обрезающий их до нужного формата и возвращающий пользователю.
 
 ## Основной обработчик
-http://cut-service.com/fill/300/200/www.audubon.org/sites/default/files/a1_1902_16_barred-owl_sandra_rothenberg_kk.jpg
+http://cut-service.com/fill/300/200/raw.githubusercontent.com/OtusGolang/final_project/master/examples/image-previewer/_gopher_original_1024x504.jpg
 
 <---- микросервис ----><- размеры превью -><--------- URL исходного изображения --------------------------------->
 
 В URL выше мы видим:
 - http://cut-service.com/fill/300/200/ - endpoint нашего сервиса,
 в котором 300x200 - это размеры финального изображения.
-- www.audubon.org/sites/default/files/a1_1902_16_barred-owl_sandra_rothenberg_kk.jpg - 
+- https://raw.githubusercontent.com/OtusGolang/final_project/master/examples/image-previewer/_gopher_original_1024x504.jpg - 
 адрес исходного изображения; сервис должен скачать его, произвести resize, закэшировать и отдать клиенту.
 
 Сервис должен получить URL исходного изображения, скачать его, изменить до необходимых размеров и вернуть как HTTP-ответ.
@@ -27,7 +27,7 @@ http://cut-service.com/fill/300/200/www.audubon.org/sites/default/files/a1_1902_
 - Ошибки удалённого сервиса или проксируем как есть, или логируем и отвечаем клиенту 502 Bad Gateway.
 - Поддержка JPEG является минимальным и достаточным требованием.
 
-**Важно**: необходимо проксировать все заголовки исходного HTTP запроса к целевому сервису (www.audubon.org в примере).
+**Важно**: необходимо проксировать все заголовки исходного HTTP запроса к целевому сервису (raw.githubusercontent.com в примере).
 
 Сервис должен сохранить (кэшировать) полученное preview на локальном диске и при повторном запросе
 отдавать изображение с диска, без запроса к удаленному HTTP-серверу.
