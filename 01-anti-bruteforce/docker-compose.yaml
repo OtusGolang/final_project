@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  server:
+    build:
+      dockerfile: Dockerfile
+    networks:
+            - code-network
+    ports:
+            - 5001:5001
+
+  postgres:
+        image: postgres:latest
+        tty: true
+        ports:
+            - "5433:5433"
+        environment:
+            HOST: postgres
+            USER: "postgres"
+            POSTGRES_PASSWORD: "postgres"
+            POSTGRES_DBNAME: "postgres"
+        networks:
+            - code-network             
+networks:
+    code-network:
+        driver: bridge
